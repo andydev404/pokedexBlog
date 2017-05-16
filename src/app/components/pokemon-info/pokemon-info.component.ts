@@ -11,7 +11,7 @@ import {PokemonesService} from "../../services/pokemones.service"
 })
 export class PokemonInfoComponent implements OnInit {
 
-  pokemon:any[] = [];
+  pokemon= {};
 
   constructor(private ParamsRouter:ActivatedRoute, private pokemonServicio:PokemonesService) {
       this.ParamsRouter.params.subscribe(params=>{

@@ -9,6 +9,9 @@ import {PokemonesService} from "./services/pokemones.service"
 //Rutas
 import {POKE_ROUTING}  from "./app.routes"
 
+//pipe
+import {CapiPipe} from "./app.capitalizado"
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
@@ -23,7 +26,8 @@ import { BuscadorPokemonComponent } from './components/buscador-pokemon/buscador
     HomeComponent,
     PokemonesComponent,
     PokemonInfoComponent,
-    BuscadorPokemonComponent
+    BuscadorPokemonComponent,
+    CapiPipe
   ],
   imports: [
     BrowserModule,

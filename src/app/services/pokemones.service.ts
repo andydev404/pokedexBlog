@@ -47,16 +47,13 @@ export class PokemonesService {
     return this.pokemones;
   }
 
-	obtenerPokemon(id:number){
-		let pokeArr = [];
-
+	obtenerPokemon(id:number):PokemonRules{
 		for(let pokemon of this.pokemones){
 			if(pokemon.id == id){
-				pokeArr.push(pokemon);
+				return pokemon;
 			}
 		}
 
-		return pokeArr;
 	}
 
 	buscarPokemon(termino:string){
